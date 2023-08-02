@@ -10,6 +10,7 @@ builder.Services.AddDbContext<XtrackingContext>(opts => opts.UseSqlServer(builde
 
 // Add services to the container.
 builder.Services.AddScoped<IPlacaService, PlacaRepository>();
+builder.Services.AddScoped<IHistoricoLocalizacao, HistoricoLocalizacaoRepository>();
 
 
 builder.Services.AddControllers();

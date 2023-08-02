@@ -16,6 +16,7 @@ namespace Modelo
         public virtual Placa Placa { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }
+        public string Altitude { get; set; }
         public DateTime? Data { get; set; }
         //public int UserId { get; set; }
     }

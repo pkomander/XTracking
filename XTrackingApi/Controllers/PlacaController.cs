@@ -65,7 +65,7 @@ namespace XTrackingApi.Controllers
 
                 if (request == null)
                 {
-                    return NoContent();
+                    return NotFound("Placa nao encontrada");
                 }
 
                 return Ok(request);
@@ -85,7 +85,7 @@ namespace XTrackingApi.Controllers
 
                 if (request == null)
                 {
-                    return NoContent();
+                    return NotFound("Placa nao encontrada");
                 }
 
                 return Ok(request);
@@ -105,7 +105,7 @@ namespace XTrackingApi.Controllers
 
                 if (request == null)
                 {
-                    return NoContent();
+                    return NotFound("Placa nao encontrada");
                 }
 
                 return Ok(request);

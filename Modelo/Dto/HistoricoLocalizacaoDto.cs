@@ -20,6 +20,7 @@ namespace Modelo.Dto
         [MinLength(3, ErrorMessage = "{0} deve ter no minimo 4 caracteres.")]
         [MaxLength(100, ErrorMessage = "{0} deve ter no maximo 100 caracteres.")]
         public string Longitude { get; set; }
+        public string Altitude { get; set; }
         public DateTime? Data { get; set; }
     }
 }
