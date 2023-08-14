@@ -4,12 +4,12 @@
     "C:\\Users\\Geoex\\Documents\\XTracking\\XTrackingApi\\XTrackingApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj": {
+    "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj",
-        "projectName": "Modelo",
-        "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj",
         "packagesPath": "C:\\Users\\Geoex\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\obj\\",
         "projectStyle": "PackageReference",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -93,8 +99,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj": {
-                "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj"
+              "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj": {
+                "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj"
               }
             }
           }
@@ -206,8 +212,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj": {
-                "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj"
+              "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj": {
+                "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj"
               },
               "C:\\Users\\Geoex\\Documents\\XTracking\\Repository\\Repository.csproj": {
                 "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Repository\\Repository.csproj"
@@ -225,6 +231,36 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

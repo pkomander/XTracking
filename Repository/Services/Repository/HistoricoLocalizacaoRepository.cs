@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Services.Repository
 {
-    public class HistoricoLocalizacaoRepository : IHistoricoLocalizacao
+    public class HistoricoLocalizacaoRepository : IHistoricoLocalizacaoService
     {
         private readonly XtrackingContext _xtrackingContext;
         private readonly IMapper _mapper;
@@ -41,12 +41,12 @@ namespace Repository.Services.Repository
             }
         }
 
-        public async Task<List<HistoricoLocalizacaoDto>> GetLocalizacao(HistoricoLocalizacaoDto historicoDto)
+        public async Task<List<HistoricoLocalizacaoDto>> GetLocalizacao(int placaId)
         {
             try
             {
-                var listaHistorico = await _xtrackingContext.HistoricoLocalizacaos.Where(h => h.PlacaId == historicoDto.PlacaId).ToListAsync();
-                if (listaHistorico.Count() > 0)
+                var listaHistorico = await _xtrackingContext.HistoricoLocalizacaos.Where(h => h.PlacaId == placaId).ToListAsync();
+                if (listaHistorico == null)
                 {
                     return null;
                 }

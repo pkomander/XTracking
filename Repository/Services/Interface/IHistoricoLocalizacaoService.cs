@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Repository.Services.Interface
 {
-    public interface IHistoricoLocalizacao
+    public interface IHistoricoLocalizacaoService
     {
         Task<bool> AddLocalizacao(HistoricoLocalizacaoDto model);
-        Task<List<HistoricoLocalizacaoDto>> GetLocalizacao(HistoricoLocalizacaoDto model);
+        Task<List<HistoricoLocalizacaoDto>> GetLocalizacao(int placaId);
     }
 }

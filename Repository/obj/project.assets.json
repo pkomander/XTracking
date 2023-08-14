@@ -1379,14 +1379,17 @@
           }
         }
       },
-      "Modelo/1.0.0": {
+      "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10"
+        },
         "compile": {
-          "bin/placeholder/Modelo.dll": {}
+          "bin/placeholder/Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Modelo.dll": {}
+          "bin/placeholder/Model.dll": {}
         }
       }
     }
@@ -3415,10 +3418,10 @@
         "version.txt"
       ]
     },
-    "Modelo/1.0.0": {
+    "Model/1.0.0": {
       "type": "project",
-      "path": "../Modelo/Modelo.csproj",
-      "msbuildProject": "../Modelo/Modelo.csproj"
+      "path": "../Modelo/Model.csproj",
+      "msbuildProject": "../Modelo/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3433,7 +3436,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
       "Microsoft.IdentityModel.Tokens >= 6.30.1",
-      "Modelo >= 1.0.0",
+      "Model >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.30.1"
     ]
   },
@@ -3470,8 +3473,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Modelo.csproj"
+            "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj": {
+              "projectPath": "C:\\Users\\Geoex\\Documents\\XTracking\\Modelo\\Model.csproj"
             }
           }
         }

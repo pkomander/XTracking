@@ -18,7 +18,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
           "Microsoft.IdentityModel.Tokens": "6.30.1",
-          "Modelo": "1.0.0",
+          "Model": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.30.1"
         },
         "runtime": {
@@ -888,9 +888,12 @@
           }
         }
       },
-      "Modelo/1.0.0": {
+      "Model/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10"
+        },
         "runtime": {
-          "Modelo.dll": {}
+          "Model.dll": {}
         }
       }
     }
@@ -1461,7 +1464,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Modelo/1.0.0": {
+    "Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

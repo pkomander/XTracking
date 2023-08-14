@@ -9,8 +9,8 @@ namespace XTrackingApi.Controllers
     [ApiController]
     public class HistoricoLocalizacaoController : ControllerBase
     {
-        private readonly IHistoricoLocalizacao _historicoLocalizacaoService;
-        public HistoricoLocalizacaoController(IHistoricoLocalizacao historicoLocalizacaoService)
+        private readonly IHistoricoLocalizacaoService _historicoLocalizacaoService;
+        public HistoricoLocalizacaoController(IHistoricoLocalizacaoService historicoLocalizacaoService)
         {
             _historicoLocalizacaoService = historicoLocalizacaoService;
         }
@@ -35,12 +35,12 @@ namespace XTrackingApi.Controllers
             }
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllLocalization([FromBody] HistoricoLocalizacaoDto model)
+        [HttpGet("{placaId}")]
+        public async Task<IActionResult> GetAllLocalization(int placaId)
         {
             try
             {
-                var request = await _historicoLocalizacaoService.GetLocalizacao(model);
+                var request = await _historicoLocalizacaoService.GetLocalizacao(placaId);
 
                 if(request == null)
                 {
